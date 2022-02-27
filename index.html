@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>LW Design by Leo Wong</title>
+	</head>
+	<body>
+		<main>
+			<!-- motorway-sign -->
+			<section>
+				<header class="header" style="z-index: 1"><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
+			</section>
+
+			<!-- built environment -->
+			<section>
+				<header class="header" style="z-index: 1"><img src="./assets/1-mountains.png" alt="mountains" /></header>
+				<header class="header" style="z-index: 2"><img src="./assets/2-life.png" alt="electrical towers" /></header>
+				<header class="header" style="z-index: 3"><img src="./assets/3-road.png" alt="roadside-trees" /></header>
+				<header class="header" style="z-index: 5"><img src="./assets/4-car.png" alt="roadside-shrubs" /></header>
+				<header class="header" style="z-index: 6"><img src="./assets/5-human.png" alt="infrastructure" /></header>
+
+				<!-- portfolio sections flyin -->
+
+				<!-- About Me -->
+				<div style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-evenly">
+					<div class="box" style="z-index: 6">
+						<h1>About Me</h1>
+						<div class="content">
+							<!-- add avatar here -->
+							<img src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" style="max-width: 200px" alt="leo wong" />
+							<h3>Hi, I'm Leo Wong.</h3>
+							<p>I'm studying to be a full-stack developer.</p>
+						</div>
+						<div class="content">
+							<h3>My style:</h3>
+							<p>#simple #fun #interactive #mobile-first</p>
+						</div>
+						<div class="content">
+							<h3>I've worked as a</h3>
+							<p>#moodle-course-creator #program-manager #head-teacher</p>
+						</div>
+					</div>
+
+					<!-- Big Project -->
+
+					<div class="box" style="z-index: 6">
+						<h1>Big Project</h1>
+						<div class="content">
+							<h3>Landing Page</h3>
+							<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/">
+								<img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" />
+							</a>
+							<p>I made a professional Landing Page for my future company, LW Design, with a journey theme.</p>
+							<p>#html #css #responsive #simple</p>
+						</div>
+					</div>
+
+					<!-- Other Projects -->
+
+					<div class="box" style="z-index: 6">
+						<h1>Other Projects</h1>
+						<div class="wrapper" style="display: flex; flex-flow: row wrap; align-items: center">
+							<div class="content" style="width: 50%">
+								<h3>CSS Snippet Cheat Sheet</h3>
+								<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-code-refactor/">
+									<img class="portfolio-image" src="./assets/screenshot-code-refactor.png" alt="image of an accessibility-driven page" style="width: 80%" />
+								</a>
+								<p>I created a clickable cheatsheet in flexbox and grid with responsive design.</p>
+								<p>#flexbox #grid #responsive</p>
+							</div>
+							<div class="content" style="width: 50%">
+								<h3>Code Refactor</h3>
+								<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/">
+									<img class="portfolio-image" src="./assets/screenshot-css-snippet-cheat-sheet.jpg" alt="image of HTML work" style="width: 80%" />
+								</a>
+								<p>I rewrote a codebase to have accessibility elements, semantic HTML as well as consolidated CSS.</p>
+								<p>#accessible&emsp;#semantic&emsp;#consolidated</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Resume -->
+
+					<div class="box" style="z-index: 6">
+						<h1>Resume</h1>
+						<div class="content">
+							<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/">Download Resume </a>
+						</div>
+						<div class="content">
+							<h3>Work</h3>
+							<p><strong>2021</strong> program-manager</p>
+							<p><strong>2020</strong> moodle-content-creator</p>
+							<p><strong>2018</strong> head-teacher</p>
+						</div>
+					</div>
+
+					<!-- Contact Me -->
+
+					<div class="box" style="z-index: 6">
+						<h1>Contact Me</h1>
+						<section class="bg-modal">
+							<div class="modal-content">
+								<img src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" alt="" style="object-fit: cover; margin-bottom: 10px" />
+
+								<form action="">
+									<input type="text" placeholder="Name" />
+									<input type="text" placeholder="Email" />
+									<a href="/" class="btn">Submit</a>
+								</form>
+							</div>
+						</section>
+					</div>
+
+					<!-- filler -->
+					<div style="height: 30vh"></div>
+				</div>
+			</section>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
