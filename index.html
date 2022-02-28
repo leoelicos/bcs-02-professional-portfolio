@@ -3,15 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- link to style sheet -->
 		<link rel="stylesheet" href="./style.css" />
+
+		<!-- font-awesome icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- title -->
 		<title>LW Design | Leo Wong</title>
+
+		<!-- favicon svg -->
 <link rel="shortcut icon" href="./assets/LW.svg" type="image/x-icon">
 	</head>
+	
+	<!-- need to clean up inline styles -->
 	<body>
-
 		<main>
-
 			<header>
 				<nav><p><img src="./assets/LW.svg" alt="LW Design | Leo Wong" style="width:20px;"></p>
 					<ul>
@@ -23,6 +31,7 @@
 					</ul>
 				</nav>
 			</header>
+
 			<!-- motorway-sign -->
 			<section id="top">
 				<header class="header" style="z-index: 1"><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
@@ -43,11 +52,12 @@
 					<div class="box" style="z-index: 6">
 						<div class="content-header"><h1>About Me</h1></div>
 
-						<!-- add avatar here -->
+						<!-- picture of me -->
 						<img src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" style="max-width: 200px; border-radius: 1rem; border: 4px solid white" alt="leo wong" />
 						<div class="content">
 							<h3>Hi, I'm Leo Wong.</h3>
 							<p>I'm studying to become a full-stack developer.</p>
+							<p>I'm also looking for a job as one.</p>
 						</div>
 
 						<div class="content">
@@ -64,9 +74,12 @@
 							<h1>Work</h1>
 						</div>
 						<div class="content">
+							<!-- LinkedIn button -->
 							<a class="btn" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/"><img src="./assets/174857.png" alt="linkedin-icon" style="width: 50px; margin: 0.6rem" /></a>
+							<!-- GitHub button -->
 							<a class="btn" target="_blank" href="https://github.com/leoelicos?tab=repositories"><img src="./assets/25231.png" alt="github-icon" style="width: 50px; margin: 0.6rem" /></a>
 						</div>
+						<!-- brief summary of my roles -->
 						<div class="content">
 							<p><strong>2021</strong> industry-program-manager</p>
 							<p><strong>2020</strong> moodle-content-creator</p>
@@ -113,8 +126,7 @@
 						</div>
 					</div>
 
-					<!-- Portfolio Other -->
-
+					<!-- Portfolio continued -->
 					<div class="box" style="z-index: 6">
 						<div class="content-header">
 							<h3>Past Project</h3>
@@ -131,26 +143,22 @@
 						</div>
 					</div>
 
-										<!-- Portfolio Other -->
+<!-- Portfolio continued -->
+<div class="box" style="z-index: 6;">
+	<div class="content-header">
+	<h3>Past Project</h3>
+	</div>
+	<div class="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: center;">
+	<div class="content">
+	<h3>currently.gnomio.com</h3>
+	<p>Fully-functional Moodle LMS System</p>
+	<p>Database of 1,915 Quizzes</p>
+	<p><sub>#ADDIE&ensp;#server-side&ensp;#responsive</sub></p>
+	</div>
+	<a class="portfolio" target="_blank" href="https://currently.gnomio.com/login/index.php" style="width: 50%; background-color: #e0e0e0; padding: 0.6rem; border-radius: 1rem;"> <img class="portfolio-image" src="./assets/moodle-sample.jpg" alt="image of a Moodle quiz" /> </a></div>
+	</div>
 
-										<div class="box" style="z-index: 6">
-											<div class="content-header">
-												<h3>Past Project</h3>
-											</div>
-											<div class="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: center">
-												<div class="content" >
-													<h3>currently.gnomio.com</h3>
-													<p>Fully-functional Moodle LMS System</p>
-													<p>Database of 1,915 Quizzes</p>
-													<p><sub>#ADDIE&ensp;#server-side&ensp;#responsive</sub></p>
-												</div>
-												<a class="portfolio" target="_blank" href="https://currently.gnomio.com/login/index.php" style="width: 50%; background-color:#e0e0e0; padding: 0.6rem; border-radius: 1rem;">
-													<img class="portfolio-image" src="./assets/moodle-sample.jpg" alt="image of a Moodle quiz"  />
-												</a>
-											</div>
-										</div>
-
-					<!-- Resume -->
+					<!-- Resume PDFs -->
 					<div id="resume" class="box" style="z-index: 6">
 						<div class="content-header">
 							<h1>Resume</h1>
@@ -163,7 +171,7 @@
 						</div>
 					</div>
 
-					<!-- Contact Me -->
+					<!-- Contact Me Form -->
 
 					<div id="contact" class="box" style="z-index: 6">
 						<div class="content-header">
@@ -188,7 +196,7 @@
 
 		</main>
 
-								<!-- footer -->
+								<!-- footer with short description of how I made this website -->
 								<footer>
 									<header class="header" style="z-index: 1; height:fit-content; color:#e3e3e3; padding: 10px; font-size: smaller;">
 									<p>20 hours&ensp;|&ensp;HTML/CSS&ensp;|&ensp;All images drawn by me&ensp;|&ensp;<a href="#top">Back to Top</a>&ensp;|&ensp;&copy; Leo Wong 2022</em></p>
