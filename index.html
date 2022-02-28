@@ -3,25 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<!-- link to a  CSS normalize -->
+		<link rel="stylesheet" href="./normalize.css" />
 		<!-- link to style sheet -->
 		<link rel="stylesheet" href="./style.css" />
-
 		<!-- font-awesome icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 		<!-- title -->
 		<title>LW Design | Leo Wong</title>
-
 		<!-- favicon svg -->
-<link rel="shortcut icon" href="./assets/LW.svg" type="image/x-icon">
+		<link rel="shortcut icon" href="./assets/LW.svg" type="image/x-icon">
 	</head>
-	
-	<!-- need to clean up inline styles -->
 	<body>
 		<main>
+			<!-- header -->
 			<header>
-				<nav><p><img src="./assets/LW.svg" alt="LW Design | Leo Wong" style="width:20px;"></p>
+				<nav><p><img src="./assets/LW.svg" alt="LW Design | Leo Wong" ></p>
 					<ul>
 						<li><a href="#about">#about</a></li>
 						<li><a href="#work">#work</a></li>
@@ -32,28 +29,28 @@
 				</nav>
 			</header>
 
-			<!-- motorway-sign -->
+			<!-- motorway section -->
 			<section id="top">
-				<header class="header" style="z-index: 1"><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
+				<header id="motorway" class="header" ><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
 			</section>
 
-			<!-- built environment -->
+			<!-- mountains and car section -->
 			<section>
-				<header class="header" style="z-index: 1"><img src="./assets/1-mountains.png" alt="mountains" /></header>
-				<header class="header" style="z-index: 2"><img src="./assets/2-life.png" alt="electrical towers" /></header>
-				<header class="header" style="z-index: 3"><img src="./assets/3-road.png" alt="roadside-trees" /></header>
-				<header class="header" style="z-index: 5"><img src="./assets/4-car-2.png" alt="roadside-shrubs" /></header>
-				<header class="header" style="z-index: 6"><img src="./assets/5-human-2.png" alt="infrastructure" /></header>
+				<header id="mountains" class="header" ><img src="./assets/1-mountains.png" alt="mountains" /></header>
+				<header id="electrical-towers" class="header" ><img src="./assets/2-life.png" alt="electrical towers" /></header>
+				<header id="roadside-trees" class="header" ><img src="./assets/3-road.png" alt="roadside-trees" /></header>
+				<header id="roadside-shrubs" class="header" ><img src="./assets/4-car-2.png" alt="roadside-shrubs" /></header>
+				<header id="infrastructure" class="header" ><img src="./assets/5-human-2.png" alt="infrastructure" /></header>
 
-				<!-- portfolio sections flyin -->
+				<!-- Portfolio fly-in section -->
 
-				<!-- About Me -->
-				<div id="about" style="display: flex; flex-flow: column; align-items: center; justify-content: space-evenly">
-					<div class="box" style="z-index: 6">
+				<!-- about Me -->
+				<div id="about">
+					<div class="box">
 						<div class="content-header"><h1>About Me</h1></div>
 
 						<!-- picture of me -->
-						<img src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" style="max-width: 200px; border-radius: 1rem; border: 4px solid white" alt="leo wong" />
+						<img id="bigleo" src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512"  alt="leo wong" />
 						<div class="content">
 							<h3>Hi, I'm Leo Wong.</h3>
 							<p>I'm studying to become a full-stack developer.</p>
@@ -61,23 +58,23 @@
 						</div>
 
 						<div class="content">
-							<p><strong>my style</strong><br /><span style="white-space: nowrap">#simple #fun #interactive</span></p>
+							<p><strong>my style</strong><br /><span class="flat">#simple #fun #interactive</span></p>
 						</div>
 						<div class="content">
-							<p><strong>my approach</strong><br /><span style="white-space: nowrap">#mobile-first #ADDIE #DRY</span></p>
+							<p><strong>my approach</strong><br /><sub><span class="flat">#mobile-first #ADDIE #DRY</span></sub></p>
 						</div>
 					</div>
 
 					<!-- Work -->
-					<div id="work" class="box" style="z-index: 6">
+					<div id="work" class="box">
 						<div class="content-header">
 							<h1>Work</h1>
 						</div>
 						<div class="content">
 							<!-- LinkedIn button -->
-							<a class="btn" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/"><img src="./assets/174857.png" alt="linkedin-icon" style="width: 50px; margin: 0.6rem" /></a>
+							<a id="linkedin-button" class="btn" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/"><img src="./assets/174857.png" alt="linkedin-icon" /></a>
 							<!-- GitHub button -->
-							<a class="btn" target="_blank" href="https://github.com/leoelicos?tab=repositories"><img src="./assets/25231.png" alt="github-icon" style="width: 50px; margin: 0.6rem" /></a>
+							<a id="github-button" class="btn" target="_blank" href="https://github.com/leoelicos?tab=repositories"><img src="./assets/25231.png" alt="github-icon"/></a>
 						</div>
 						<!-- brief summary of my roles -->
 						<div class="content">
@@ -88,9 +85,9 @@
 						</div>
 					</div>
 
-					<!-- Portfolio Main -->
+					<!-- Portfolio 0 -->
 
-					<div id="portfolio" class="box" style="z-index: 6">
+					<div id="portfolio" class="box">
 						<div class="content-header">
 							<h1>Signature Project</h1>
 						</div>
@@ -98,111 +95,141 @@
 						<div class="content">
 							<h3>LW Design</h3>
 							<p>Landing page for a local design company</p>
-							<p>#CRO #SEO #landing-page</p>
+							<p><sub><span class="flat">#CRO #SEO #landing-page</span></sub></p>
 						</div>
 
-						<!-- <div class="content"> -->
-							<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" style="border:4px solid white;"/></a>
+						<!-- screenshot of signature project -->
+							<a id="portfolio-signature" class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
 						<!-- </div> -->
 					</div>
 
-					<!-- Portfolio Other -->
+					<!-- Portfolio 1 -->
 
-					<div class="box" style="z-index: 6">
+					<div id="portfolio-project-1" class="box">
 						<div class="content-header">
 							<h3>Past Project</h3>
 						</div>
-						<div class="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: center">
+						<div class="wrapper">
 							<div class="content">
 								<h3>Code Review</h3>
-								<p>Reworked codebase to meet professional standards</p>
-								<p><sub>#semanticHTML&ensp;#dryCSS</sub>&ensp;<sub>#accessibility</sub></p>
+								<p>Reworked codebase to meet professional standards.</p>
+								<p><sub><span class="flat">#semanticHTML&ensp;#dryCSS&ensp;#accessibility</span></sub></p>
 							</div>
-							<a class="portfolio" target="_blank" href="https://github.com/leoelicos/bcs-01-code-refactor" style="width: 50%; background-color:#e0e0e0; padding: 0.6rem; border-radius: 1rem;">
-								<img class="portfolio-image" src="./assets/refactor-unfactored.png" alt="image of nonstandard code"  />
+							<a 
+							class="portfolio-project-1-images" 
+							target="_blank" 
+							href="https://github.com/leoelicos/bcs-01-code-refactor" >
+
+								<img 
+								class="portfolio-image " 
+								src="./assets/refactor-unfactored.png" 
+								alt="image of nonstandard code"  />
+
 								<p><i class="fa-solid fa-caret-down"></i></p>
-								<img class="portfolio-image" src="./assets/refactor-factored.png" alt="image of standardised code"  />
+
+								<img class="portfolio-image " 
+								src="./assets/refactor-factored.png" 
+								alt="image of standardised code"  />
 							</a>
 						</div>
 					</div>
 
-					<!-- Portfolio continued -->
-					<div class="box" style="z-index: 6">
+					<!-- Portfolio 2 -->
+					<div id="portfolio-project-1" class="box">
 						<div class="content-header">
 							<h3>Past Project</h3>
 						</div>
-						<div class="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: center">
-							<div class="content" >
+						<div class="wrapper">
+							<div class="content">
 								<h3>Developer Tool</h3>
-								<p>Clickable cheatsheet for beginner programmers to copy and paste.</p>
-								<p><sub>#CSSflexbox&ensp;#CSSgrid&ensp;#responsive</sub></p>
+								<p>Clickable cheatsheet for beginner programmers to copy and paste</p>
+								<p><sub><span class="flat">#CSSflexbox&ensp;#CSSgrid&ensp;#responsive</span></sub></p>
 							</div>
-							<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/" style="width: 50%; background-color:#e0e0e0; padding: 0.6rem; border-radius: 1rem;">
-								<img class="portfolio-image" src="./assets/screenshot-css-snippet-cheat-sheet.png" alt="image of a cheatsheet"  />
+							<a 
+							class="portfolio-project-1-images" 
+							target="_blank" 
+							href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/" >
+
+								<img 
+								class="portfolio-image " 
+								src="./assets/screenshot-css-snippet-cheat-sheet.png" 
+								alt="image of a cheatsheet"  />
+
+
 							</a>
 						</div>
 					</div>
 
-<!-- Portfolio continued -->
-<div class="box" style="z-index: 6;">
-	<div class="content-header">
-	<h3>Past Project</h3>
-	</div>
-	<div class="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; justify-content: center;">
-	<div class="content">
-	<h3>currently.gnomio.com</h3>
-	<p>Fully-functional Moodle LMS System</p>
-	<p>Database of 1,915 Quizzes</p>
-	<p><sub>#ADDIE&ensp;#server-side&ensp;#responsive</sub></p>
-	</div>
-	<a class="portfolio" target="_blank" href="https://currently.gnomio.com/login/index.php" style="width: 50%; background-color: #e0e0e0; padding: 0.6rem; border-radius: 1rem;"> <img class="portfolio-image" src="./assets/moodle-sample.jpg" alt="image of a Moodle quiz" /> </a></div>
-	</div>
 
-					<!-- Resume PDFs -->
-					<div id="resume" class="box" style="z-index: 6">
+
+					<!-- Portfolio 3 -->
+
+
+
+					<div id="portfolio-project-1" class="box">
 						<div class="content-header">
-							<h1>Resume</h1>
+							<h3>Past Project</h3>
 						</div>
-						<div class="content">
-							<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1YWzpBWkyxsXHbFR2Dpfgwi09n13q6GuV/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> e-Learning Portfolio (PDF) </a>
-						</div>
-						<div class="content">
-							<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1goW2ynvrUE91fD9qO_jX_cYNFC0ZUwNk/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> Download Resume (PDF) </a>
-						</div>
-					</div>
-
-					<!-- Contact Me Form -->
-
-					<div id="contact" class="box" style="z-index: 6">
-						<div class="content-header">
-							<h1>Contact Me</h1>
-						</div>
-						<section class="bg-modal">
-							<div class="modal-content">
-								<img src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" alt="" style="object-fit: cover; margin-bottom: 10px" />
-
-								<form action="">
-									<input type="text" placeholder="Name" />
-									<input type="text" placeholder="Email" />
-									<div class="btn">Submit</div>
-								</form>
+						<div class="wrapper">
+							<div class="content">
+								<h3>currently.gnomio.com</h3>
+								<p>Fully-functional Moodle LMS System</p>
+								<p>Database of 1,915 Quizzes</p>
+								<p><sub><span class="flat">#ADDIE&ensp;#server-side&ensp;#responsive</span></sub></p>
 							</div>
-						</section>
+							<a 
+							class="portfolio-project-1-images" 
+							target="_blank" 
+							href="https://currently.gnomio.com/login/index.php" >
+
+								<img 
+								class="portfolio-image " 
+								src="./assets/moodle-sample.jpg" 
+								alt="image of a Moodle quiz"  />
+
+
+							</a>
+						</div>
 					</div>
-			</section>
 
 
+						<!-- Resume PDFs -->
+						<div id="resume" class="box">
+							<div class="content-header">
+								<h1>Resume</h1>
+							</div>
+							<div class="content">
+								<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1YWzpBWkyxsXHbFR2Dpfgwi09n13q6GuV/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> e-Learning Portfolio (PDF) </a>
+							</div>
+							<div class="content">
+								<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1goW2ynvrUE91fD9qO_jX_cYNFC0ZUwNk/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> Resume (PDF) </a>
+							</div>
+						</div>
 
-
-		</main>
-
-								<!-- footer with short description of how I made this website -->
-								<footer>
-									<header class="header" style="z-index: 1; height:fit-content; color:#e3e3e3; padding: 10px; font-size: smaller;">
-									<p>20 hours&ensp;|&ensp;HTML/CSS&ensp;|&ensp;All images drawn by me&ensp;|&ensp;<a href="#top">Back to Top</a>&ensp;|&ensp;&copy; Leo Wong 2022</em></p>
-								</header>
-								</footer>
-
+						<!-- Contact Me Form -->
+						<div id="contact" class="box">
+							<div class="content-header">
+								<h1>Contact Me</h1>
+							</div>
+							<section class="bg-modal">
+								<div class="modal-content">
+									<img id="small-leo" src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" alt="picture of Leo Wong"  />
+									<form action="">
+										<input type="text" placeholder="Name" />
+										<input type="text" placeholder="Email" />
+										<input type="textarea" placeholder="Message" />
+										<div class="btn">Submit</div>
+									</form>
+								</div>
+							</section>
+						</div>
+					</section>
+				</main>
+			<!-- footer with short description of how I made this website -->
+			<footer class="header">
+				<p>20 hours HTML/CSS&ensp;|&ensp;All images drawn by me&ensp;|&ensp;<a href="#top"><i class="icon fa fa-arrow-up fa-fw "></i>
+				</a>&ensp;|&ensp;&copy; Leo Wong 2022</em></p>
+			</footer>
 		<script src="./script.js"></script>
 	</body>
 </html>

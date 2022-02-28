@@ -16,9 +16,11 @@ To access the app, click on [Portfolio](https://leoelicos.github.io/bcs-02-portf
 
 To move down the page, scroll down with your scroll button, or swipe up on your phone.
 
-### Screenshots
+## Screenshots
 
-Portfolio ![Animation](./assets/screenshot-of-deployed.jpg)
+### Portfolio
+
+![Animation](./assets/screenshot-of-deployed.jpg)
 
 ## Credits
 
