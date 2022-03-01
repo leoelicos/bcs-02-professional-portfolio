@@ -457,4 +457,8 @@ footer {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	padding: 0.6rem 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-items: center;
 }
