@@ -1,68 +1,109 @@
-/* import google font */
+/*****************
+ * Imported Font *
+	*****************/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* custom variables for colors */
+/******************
+  Custom Variables 
+	******************/
+
 :root {
-	/* TODO: add repeated variables here */
-	--bg-color: #ffffff;
+	/* Background Colors */
+
+	--color-bg-body: #fff2cc;
+
+	/* Element Depths */
+
+	--depth-bg-motorway: 0;
+	--depth-bg-mountains: 1;
+	--depth-bg-life: 2;
+	--depth-bg-road: 3;
+	--depth-bg-car: 4;
+	--depth-bg-human: 5;
+	--depth-scrolling-text: 6;
+	--depth-navbar: 7;
 }
 
-/* universal selectors  */
+/********************
+  Universal Selector 
+	********************/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* for smoother scrolling */
+/********************
+  Semantic Selectors
+	********************/
+
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; /* for smoother scrolling */
 }
 
-/* flex the sections */
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+
 	position: relative;
-	background-color: white;
-	overflow-x: hidden;
-}
 
-/* limit the width by the car's original image dimension ratio (1499 x 842) so it doesn't spoil the car's shape on the page */
-main {
-	background-color: #fff2cc;
-	max-width: calc(100vh * 1499 / 842);
-	z-index: 1;
-}
+	/* set a color for when the screen is wider than the width of main */
+	background-color: var(--color-bg-body);
 
-body > header {
-	width: 100%;
+	/* flex the sections so that on oversize screens the content centers */
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	justify-items: flex-start;
 }
 
-/* nav bar */
-nav {
-	align-self: center;
-	margin: auto;
-	width: 100vw;
-	position: fixed;
+/******************************
+  Header with Navbar inside it
+	******************************/
 
+header {
+	width: 100%;
+	/* flex so navbar is centered */
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+/********
+  Navbar
+	********/
+
+nav {
+	margin: auto;
+	width: 100%;
+	position: fixed;
+	/* flex the navbar items to the top and justify space-between so icon flexes left and links flex right */
 	display: flex;
 	flex-flow: row nowrap;
-	align-items: flex-start;
+	align-items: flex-start; /* flex everything up */
 	justify-content: space-between;
 	max-width: calc(100vh * 1499 / 842); /* limit navbar by the car's original dimensions so it sits inside the frame vertically aligned to the car */
 	padding-right: 10px;
-	z-index: 9000;
+	z-index: var(--depth-navbar);
 }
+
+/* container for logo */
+nav p {
+	display: inline-block;
+	padding: 0.3rem;
+	margin: 0 0.6rem;
+}
+
+/* logo */
+nav p img {
+	width: 20px;
+	margin-right: -10px; /* adjust the SVG a little because it was off center */
+}
+
+/* flex navbar column for smaller devices so the icon appears below the horizontal list */
 @media screen and (max-width: 768px) {
 	nav {
 		display: flex;
@@ -70,21 +111,12 @@ nav {
 		align-items: center;
 		justify-content: center;
 	}
-	nav p img {
+	nav p a img {
 		margin-top: -5px;
 	}
 }
-nav p {
-	display: inline-block;
-	padding: 0.3rem;
-	margin: 0 0.6rem;
-}
 
-/* small icon for my logo */
-nav p img {
-	width: 20px;
-	margin-right: -10px; /* adjust the SVG a little because it was off center */
-}
+/* container for menu items */
 nav ul {
 	list-style-type: none;
 	display: flex;
@@ -95,90 +127,87 @@ nav ul {
 	border-bottom: 1px solid #e0e0e0;
 	background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* menu items */
 nav ul li {
 	margin: 0 0.2rem;
 	padding: 0 0.3rem;
 }
-nav ul li:hover {
-	border-bottom: 1px solid black;
+
+nav ul li a:hover {
+	border-bottom: 1px solid black; /* make a line appear when the menu is clicked */
 }
 
-.header {
+/****************************************************************************
+  Main with Sections of Scrolling Images and Sections of Scrolling Articles
+ ****************************************************************************/
+
+main {
+	background-color: #fff2cc; /* dreamy yellow sky color */
+	/* limit the width by the scrolling images' original imagesize ratio (1499 x 842) so it doesn't skew the car's shape on the page */
+	max-width: calc(100vh * 1499 / 842);
+}
+
+/*****************************
+ Sections of Scrolling Images
+	*****************************/
+
+/* container for images */
+figure {
 	width: 100%;
 	height: 100vh;
 	position: sticky;
 	top: 0px;
-	background-color: rgba(255, 255, 255, 0);
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
 }
 
-/* give depth to each background image so they layer correctly on scroll */
-#motorway {
-	z-index: 1;
-}
-
-#mountains {
-	z-index: 1;
-}
-#electrical-towers {
-	z-index: 2;
-}
-#roadside-trees {
-	z-index: 3;
-}
-#roadside-shrubs {
-	z-index: 5;
-}
-#infrastructure {
-	z-index: 6;
-}
-
-/* flex the about-me so the sections align in column */
-#scrolling-text {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
-#bigleo {
-	max-width: 200px;
-	border-radius: 1rem;
-	border: 4px solid white;
-}
-.flat {
-	white-space: nowrap;
-	color: rgba(0, 60, 0, 1);
-}
-.header img {
+/* images */
+figure img {
 	align-self: center;
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 	object-position: center bottom;
 }
-.content-header {
-	background-color: rgba(0, 60, 0, 1);
-	border: 4px solid white;
-	border-radius: 1.2rem;
-	padding: 0.6rem;
-	margin-top: 0.3rem;
-	margin-bottom: 0.3rem;
+
+/* add depth to images so they layer from vertical scroll and also their intrinsic transparency and their calculated image depths */
+#bg-motorway {
+	z-index: var(--depth-bg-motorway);
 }
-.content {
-	background-color: rgba(255, 255, 255, 0.8);
-	border-top: 4px solid white;
-	border-bottom: 4px solid white;
-	color: #645014;
-	padding: 0.6rem;
-	margin: 0.3rem 0;
-	width: 100%;
+#bg-mountains {
+	z-index: var(--depth-bg-mountains);
 }
-.content h3 {
-	margin-top: 0.5rem;
+#bg-life {
+	z-index: var(--depth-bg-life);
 }
+#bg-road {
+	z-index: var(--depth-bg-road);
+}
+#bg-car {
+	z-index: var(--depth-bg-car);
+}
+#bg-human {
+	z-index: var(--depth-bg-human);
+}
+
+/*******************************
+ Sections of Scrolling Articles
+	*******************************/
+
+/* flex parent so articles align in a column */
+#scrolling-text {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/*******************
+ Scrolling Articles
+	*******************/
 
 .box {
 	width: calc(100vw * 0.8);
@@ -190,197 +219,85 @@ nav ul li:hover {
 	color: #fff;
 	height: 100vh;
 	margin: 1rem 10% 1rem 10%;
-	z-index: 6;
+	z-index: var(--depth-scrolling-text);
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
 }
 
-#work {
-	z-index: 6;
-}
-a#linkedin-button,
-a#github-button {
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 0.6rem;
-	display: inline-block;
-	transition: transform 0.5s ease-in-out;
-}
-
-a#linkedin-button:hover,
-a#github-button:hover {
-	box-shadow: inset 0px 0px 2px rgb(255 255 255), 0 0 10px rgb(255 255 255);
-	transform: scale(1.1);
-	transition: transform 0.5s ease-in-out;
-}
-
-#linkedin-button img,
-#github-button img {
-	width: 50px;
-	margin: 0.6rem;
-}
-#portfolio {
-	z-index: 6;
-}
-#portfolio-signature img {
-	border: 4px solid white;
-	border-radius: 1rem;
-}
-#portfolio-signature:hover {
-	border-radius: 1rem;
-	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
-}
-
-.portfolio-project-1-images {
-	width: 50%;
-	background-color: #fff;
-	border-radius: 1rem;
-	border: 4px solid white;
-}
-.portfolio-project-1-images:hover {
-	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
-}
-
-#portfolio-project-2-image {
-	width: 50%;
-	/* background-color: #e0e0e0; */
-	/* padding: 0.6rem; */
-	border-radius: 1rem;
-	/* box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1); */
-	border: 4px solid white;
-}
-#portfolio-project-2-image:hover {
-	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
-}
-#portfolio-project-3-image {
-	max-width: 50%;
-	/* background-color: #e0e0e0; */
-	/* padding: 0.6rem; */
-	border-radius: 1rem;
-	/* box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1); */
-	border: 4px solid white;
-}
-#portfolio-project-3-image:hover {
-	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
-}
-#resume {
-	z-index: 6;
-}
-
-.wrapper {
-	width: 100%;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	justify-content: center;
-}
-.box header {
-	font-size: 30px;
-}
 .box p {
 	font-size: 16px;
 }
 
-.portfolio-image {
-	border-radius: 1rem;
-	object-fit: cover;
+/* big green displays for headings */
+.content-header {
+	background-color: rgba(0, 60, 0, 1);
+	border: 4px solid white;
+	border-radius: 0.6rem;
+	padding: 0.6rem 6.4rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+
+/* content-header headings */
+.content-header h1 {
+	font-size: 1.5rem;
+}
+.content-header h3 {
+	font-size: 1.25rem;
+}
+
+/* this class is used when there are more than one .content and needs to be flexed to a column */
+.content-wrapper {
 	width: 100%;
-	max-height: 50vh;
-}
-
-.portfolio:hover {
-	cursor: pointer;
-}
-.portfolio-header {
-	flex: 1;
-	position: relative;
-	margin-top: -20px;
-	border: 1px solid gray;
-	border-radius: 8px;
-	transition: all 0.5s ease-in;
-	padding: 3px 5px;
-	background-color: #977e7e;
-	color: white;
-	font-size: 20px;
-}
-
-/* #contact {
-	z-index: 6;
-	width: calc(100vw * 0.8);
-} */
-
-.bg-modal {
-	width: 100%;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.modal-content {
-	width: 100%;
-	opacity: 1;
-	text-align: center;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-form {
-	z-index: 0;
-	background-color: rgba(11, 95, 22, 0.8);
-	padding: 1rem;
-	width: 100%;
-	border-radius: 5px;
-	/* grid 2x3 to align labels and forms */
-	display: grid;
-	grid-template: repeat(4, 1fr) / min-content 1fr;
-	gap: 1rem 0.5rem;
-	align-items: center;
-	justify-content: center;
-}
-label {
-	padding-left: 0.5rem;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-input {
-	background-color: rgba(255, 255, 255, 0.2);
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	padding: 0.5rem;
-	border: none;
-	border-bottom: 2px solid white;
-	border-radius: 5px 5px 0 0;
-
-	text-align: left;
-	font-family: 'Poppins';
-	color: black;
-}
-input[type='submit'] {
-	border-radius: 0;
-}
-input:focus-visible {
-	outline: none;
-}
-input,
-textarea {
-	caret-color: white;
-}
-#label-send {
-	grid-column: span 2;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
 }
+
+/* content */
+.content {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	color: #645014;
+	padding: 0.6rem;
+	margin: 0.3rem 0;
+	width: 100%;
+}
+
+/* content headings */
+.content h3 {
+	margin-top: 0.5rem;
+}
+
+/* content images - screenshots of portfolio projects */
+.content-image {
+	border-radius: 1rem;
+	object-fit: cover;
+	object-position: top;
+	width: 100%;
+	max-height: 50vh;
+}
+
+/* picture of Leo */
+#bigleo {
+	/* as opposed to iconLeo */
+	max-width: 200px;
+	border-radius: 1rem;
+	border: 4px solid white;
+}
+
+/* the lines with hashtags don't wrap */
+/* TODO: make a new class called hashtags and add the sub */
+.flat {
+	white-space: nowrap;
+	color: rgba(0, 60, 0, 1);
+}
+
+/* button links to social network and public repo */
 .btn-wrapper {
 	background-color: rgba(255, 255, 255, 0.8);
 	border-top: 4px solid white;
@@ -400,15 +317,23 @@ textarea {
 .btn:focus {
 	outline: 0;
 }
-input:hover::placeholder {
-	font-family: cursive;
-	font-style: italic;
-	font-size: 20px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	color: white;
+
+a#linkedin-button,
+a#github-button {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0.6rem;
+	display: inline-block;
+	transition: transform 0.5s ease-in-out;
 }
+
+/* glow and enlarge on hover */
+a#linkedin-button:hover,
+a#github-button:hover {
+	box-shadow: inset 0px 0px 2px rgb(255 255 255), 0 0 10px rgb(255 255 255);
+	transform: scale(1.1);
+	transition: transform 0.5s ease-in-out;
+}
+
 a,
 a:visited,
 a:active,
@@ -419,12 +344,117 @@ a:hover {
 	transition: box-shadow 0.3s;
 }
 
+/* set width for Linkedin and Github icons  */
+#linkedin-button img,
+#github-button img {
+	width: 50px;
+	margin: 0.6rem;
+}
+
+/****************************
+  Article: Signature Project
+ ****************************/
+
+/* set the first image width 100%, which is wider than the other images which are 75% */
+#portfolio-signature {
+	width: 100%;
+}
+#portfolio-signature img {
+	border: 4px solid white;
+	border-radius: 1rem;
+}
+#portfolio-signature:hover {
+	border-radius: 1rem;
+	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
+}
+
+/*************************
+  Articles: Past Projects
+ *************************/
+
+.anchor-past-project {
+	width: 75%;
+	background-color: #fff;
+	border-radius: 1rem;
+	border: 4px solid white;
+}
+.anchor-past-project:hover {
+	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
+}
+
+/**************************
+  Article: Contact Me Form
+ **************************/
+
+form {
+	background-color: rgba(11, 95, 22, 1);
+	padding: 1rem;
+	width: 100%;
+	border-radius: 5px;
+
+	/* grid 2x3 to align labels and forms */
+	display: grid;
+	grid-template: repeat(4, 1fr) / min-content 1fr;
+	gap: 1rem 0.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+/* use label instead of placeholder for UX reasons */
+label {
+	padding-left: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+input {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100%;
+	padding: 0.5rem;
+	border: none;
+	border-bottom: 2px solid white;
+	border-radius: 5px 5px 0 0;
+
+	text-align: left;
+	font-family: 'Poppins';
+	color: black;
+}
+
+/* override default submit button's border radius */
+input[type='submit'] {
+	border-radius: 0;
+}
+
+/* override default text and textarea's black border on focus */
+input:focus-visible {
+	outline: none;
+}
+
+/* make the blinking text cursor white */
+input,
+textarea {
+	caret-color: white;
+}
+
+/* format the Send Your Message button */
+#label-send {
+	grid-column: span 2;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+/*******
+ Footer
+	*******/
+
 footer {
-	z-index: 1;
-	height: fit-content;
-
+	width: 100%;
 	color: rgba(0, 0, 0, 0.5);
-
 	font-size: 12px;
 	padding: 0.6rem 0;
 }

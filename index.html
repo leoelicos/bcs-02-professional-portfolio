@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- link to a  CSS normalize -->
+		<!-- link to a CSS normalize -->
 		<link rel="stylesheet" href="./normalize.css" />
 		<!-- link to style sheet -->
 		<link rel="stylesheet" href="./style.css" />
@@ -29,26 +29,26 @@
 			</nav>
 		</header>
 		<main>
-
-			<!-- Splash Area with Motorway Sign -->
+			<!-- Section for Splash Image -->
 			<section id="top">
-				<header id="motorway" class="header" ><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
+				<figure id="bg-motorway"><img src="./assets/0-motorway.png" alt="a sign indicating to scroll down" /></figure>
 			</section>
 
-			<!-- Picture Area with Stacking Effect -->
+			<!-- Section for Scrolling Pictures -->
 			<section>
-				<header id="mountains" class="header" ><img src="./assets/1-mountains.png" alt="mountains" /></header>
-				<header id="electrical-towers" class="header" ><img src="./assets/2-life.png" alt="electrical towers" /></header>
-				<header id="roadside-trees" class="header" ><img src="./assets/3-road.png" alt="roadside-trees" /></header>
-				<header id="roadside-shrubs" class="header" ><img src="./assets/4-car-2.png" alt="roadside-shrubs" /></header>
-				<header id="infrastructure" class="header" ><img src="./assets/5-human-2.png" alt="infrastructure" /></header>
+				<figure id="bg-mountains"><img src="./assets/1-mountains.png" alt="a landscape of mountains" /></figure>
+				<figure id="bg-life"><img src="./assets/2-life.png" alt="electrical towers, roadside trees, roadside shrubs" /></figure>
+				<figure id="bg-road"><img src="./assets/3-road.png" alt="an asphalt road with fences on both sides" /></figure>
+				<figure id="bg-car"><img src="./assets/4-car-2.png" alt="interior of a car" /></figure>
+				<figure id="bg-human"><img src="./assets/5-human-2.png" alt="a road sign with directions and a human hand" /></figure>
 
-				<!-- Text Area with Scrolling Text -->
+				<!-- Section for Scrolling Text (on top of Section of Pictures)-->
 				<section id="scrolling-text">
 
 				<!-- About Me -->
 					<article class="box" id="about">
 						
+						<!-- Article Heading -->
 						<div class="content-header"><h1>About Me</h1></div>
 
 						<!-- Picture of Leo Wong -->
@@ -58,32 +58,39 @@
 						<div class="content">
 							<h3>Hi, I'm Leo Wong.</h3>
 							<p>I'm studying to become a full-stack developer.</p>
-							<p>I'm also looking for a job as one.</p>
+							<p>I'm also <a href="#contact">available for hire</a>.</p>
 						</div>
 
 						<!-- Tags of my style -->
 						<div class="content">
-							<p><strong>my style</strong><br /><span class="flat">#simple #fun #interactive</span></p>
+							<p><strong>my style</strong><br /><span class="flat"><sub>#simple #fun #interactive</sub></span></p>
 						</div>
 
 						<!-- Tags of my approach -->
 						<div class="content">
-							<p><strong>my approach</strong><br /><sub><span class="flat">#mobile-first #ADDIE #DRY</span></sub></p>
+							<p><strong>my approach</strong><br /><span class="flat"><sub>#mobile-first #ADDIE #DRY</sub></span></p>
 						</div>
 					</article>
 
 					<!-- Work -->
 					<article id="work" class="box">
+						
+						<!-- Article Heading -->
 						<div class="content-header">
 							<h1>Work</h1>
 						</div>
+
+						<!-- Buttons -->
 						<div class="content">
+
 							<!-- LinkedIn button -->
 							<a id="linkedin-button" class="btn" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/"><img src="./assets/174857.png" alt="linkedin-icon" /></a>
+
 							<!-- GitHub button -->
 							<a id="github-button" class="btn" target="_blank" href="https://github.com/leoelicos?tab=repositories"><img src="./assets/25231.png" alt="github-icon"/></a>
 						</div>
-						<!-- brief summary of my roles -->
+
+						<!-- Work Titles -->
 						<div class="content">
 							<h3>Industry Program Manager</h3>
 							<p>2021</p>
@@ -96,72 +103,75 @@
 						</div>
 					</article>
 
-					<!-- Portfolio 0 -->
-
+					<!-- Signature Project -->
 					<article id="portfolio" class="box">
+
+						<!-- Project Header -->
 						<div class="content-header">
 							<h1>Signature Project</h1>
 						</div>
 
-						<div class="content">
+						<!-- Project Name and Description -->
+							<div class="content-wrapper">
+							<div class="content">
 							<h3>LW Design</h3>
 							<p>Landing page for a local design company</p>
 							<p><sub><span class="flat">#CRO #SEO #landing-page</span></sub></p>
 						</div>
 
-						<!-- screenshot of signature project -->
-							<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
-						<!-- </div> -->
+						<!-- Project Link -->
+							<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="content-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
+</div>
 					</article>
 
-					<!-- Portfolio 1 -->
+					<!-- Past Project 1 — Code Review -->
+					<article class="box">
 
-					<article id="portfolio-project-1" class="box">
+						<!-- Project Header -->
 						<div class="content-header">
-							<h3>Past Project</h3>
+							<h3>Past Projects/</h3>
 						</div>
-						<div class="wrapper">
+
+						<!-- Project Name and Description -->
+						<div class="content-wrapper">
 							<div class="content">
 								<h3>Code Review</h3>
 								<p>Codebase reworked to professional standards.</p>
 								<p><sub><span class="flat">#semanticHTML&ensp;#dryCSS&ensp;#accessibility</span></sub></p>
 							</div>
-							<a 
-							class="portfolio-project-1-images" 
-							target="_blank" 
-							href="https://github.com/leoelicos/bcs-01-code-refactor" >
-
-								<img 
-								class="portfolio-image " 
-								src="./assets/refactor-unfactored.png" 
-								alt="image of nonstandard code"  />
-
-								<p><i class="fa-solid fa-caret-down"></i></p>
-
-								<img class="portfolio-image " 
-								src="./assets/refactor-factored.png" 
-								alt="image of standardised code"  />
+							<!-- Project Link -->
+							<a class="anchor-past-project" target="_blank" href="https://github.com/leoelicos/bcs-01-code-refactor">
+								<!-- Screenshot of Original Code -->
+								<img class="content-image " src="./assets/refactor-unfactored.png" alt="image of nonstandard code"  />
+								<!-- Arrow Icon to Indicate Transformation -->
+								<p><i class="fa-solid fa-caret-down"></i></p> 
+								<!-- Screenshot of Refactored Code -->
+								<img class="content-image " src="./assets/refactor-factored.png" alt="image of standardised code"  />
 							</a>
 						</div>
 					</article>
 
-					<!-- Portfolio 2 -->
-					<article id="portfolio-project-1" class="box">
+					<!-- Past Project 2 — Developer Tool -->
+					<article class="box">
+
+						<!-- Project Header -->
 						<div class="content-header">
-							<h3>Past Project</h3>
+							<h3>Past Projects/</h3>
 						</div>
-						<div class="wrapper">
+
+						<!-- Project Link -->
+						<div class="content-wrapper">
 							<div class="content">
 								<h3>Developer Tool</h3>
 								<p>Clickable cheatsheet for beginner programmers</p>
-								<p><sub><span class="flat">#CSSflexbox&ensp;#CSSgrid&ensp;#responsive</span></sub></p>
+								<p><span class="flat"><sub>#flexbox&ensp;#grid&ensp;#responsive</sub></span></p>
 							</div>
 							<a 
-							class="portfolio-project-1-images" 
+							class="anchor-past-project" 
 							target="_blank" 
 							href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/" >
 								<img 
-								class="portfolio-image " 
+								class="content-image " 
 								src="./assets/screenshot-css-snippet-cheat-sheet.png" 
 								alt="image of a cheatsheet"  />
 							</a>
@@ -169,11 +179,12 @@
 					</article>
 
 					<!-- Portfolio 3 -->
-					<article id="portfolio-project-1" class="box">
+					<article class="box">
+						<!-- Project Heading -->
 						<div class="content-header">
-							<h3>Past Project</h3>
+							<h3>Past Projects/</h3>
 						</div>
-						<div class="wrapper">
+						<div class="content-wrapper">
 							<div class="content">
 								<h3>currently.gnomio.com</h3>
 								<p>Fully-functional Moodle LMS System</p>
@@ -181,12 +192,12 @@
 								<p><sub><span class="flat">#ADDIE&ensp;#server-side&ensp;#responsive</span></sub></p>
 							</div>
 							<a 
-							class="portfolio-project-1-images" 
+							class="anchor-past-project" 
 							target="_blank" 
 							href="https://currently.gnomio.com/login/index.php" >
 
 								<img 
-								class="portfolio-image " 
+								class="content-image " 
 								src="./assets/moodle-sample.jpg" 
 								alt="image of a Moodle quiz"  />
 
@@ -216,9 +227,7 @@
 							<div class="content-header">
 								<h1>Contact Me</h1>
 							</div>
-							<section class="bg-modal">
-								<div class="modal-content">
-									<form id="contact-form"  onsubmit="return false;">
+							<form id="contact-form"  onsubmit="return false;">
 										<label for="contactName" id="label-contactName" >Your Name:</label>
 										<input type="text"  id="input-contactName" required>
 										<label for="contactEmail" id="label-contactEmail">Your Email:</label>
@@ -226,16 +235,14 @@
 										<label for="contactMessage" id="label-contactMessage">Your Message:</label>
 										<input type="textarea" id="input-contactMessage"  />
 										<input type="submit" id="label-send" value="Send Your Message"  class="btn-wrapper" target="_blank" href="" >
-									</form>
-								</div>
-							</section>
+								</form>
 						</article>
 					</section>
 				</section>
 			</main>
 			<!-- footer with short description of how I made this website -->
-			<footer class="header">
-				<p>20 hours HTML/CSS&ensp;|&ensp;All images drawn by me&ensp;|&ensp;<a href="#top"><i class="icon fa fa-arrow-up fa-fw "></i>
+			<footer >
+				<p>HTML/CSS&ensp;|&ensp;All images handcrafted by Leo Wong&ensp;|&ensp;<a href="#top"><i class="icon fa fa-arrow-up fa-fw "></i>
 				</a>&ensp;|&ensp;&copy; Leo Wong 2022</em></p>
 			</footer>
 		<script src="./script.js"></script>
