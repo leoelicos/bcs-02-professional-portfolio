@@ -14,27 +14,28 @@
 		<!-- favicon svg -->
 		<link rel="shortcut icon" href="./assets/LW.svg" type="image/x-icon">
 	</head>
-	<body>
-		<main>
-			<!-- header -->
-			<header>
-				<nav><p><img src="./assets/LW.svg" alt="LW Design | Leo Wong" ></p>
-					<ul>
-						<li><a href="#about">#about</a></li>
-						<li><a href="#work">#work</a></li>
-						<li><a href="#portfolio">#portfolio</a></li>
-						<li><a href="#resume">#resume</a></li>
-						<li><a href="#contact">#contact</a></li>
-					</ul>
-				</nav>
-			</header>
 
-			<!-- motorway section -->
+	<body>
+		<!-- Logo and Navigation Bar -->
+		<header>
+			<nav><p><a href="#contact"><img src="./assets/LW.svg" alt="LW Design | Leo Wong" ></a></p>
+				<ul>
+					<li><a href="#about">#about</a></li>
+					<li><a href="#work">#work</a></li>
+					<li><a href="#portfolio">#portfolio</a></li>
+					<li><a href="#resume">#resume</a></li>
+					<li><a href="#contact">#contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+
+			<!-- Splash Area with Motorway Sign -->
 			<section id="top">
 				<header id="motorway" class="header" ><img src="./assets/0-motorway.png" alt="motorway-sign" /></header>
 			</section>
 
-			<!-- mountains and car section -->
+			<!-- Picture Area with Stacking Effect -->
 			<section>
 				<header id="mountains" class="header" ><img src="./assets/1-mountains.png" alt="mountains" /></header>
 				<header id="electrical-towers" class="header" ><img src="./assets/2-life.png" alt="electrical towers" /></header>
@@ -42,31 +43,37 @@
 				<header id="roadside-shrubs" class="header" ><img src="./assets/4-car-2.png" alt="roadside-shrubs" /></header>
 				<header id="infrastructure" class="header" ><img src="./assets/5-human-2.png" alt="infrastructure" /></header>
 
-				<!-- fly-in articles -->
+				<!-- Text Area with Scrolling Text -->
+				<section id="scrolling-text">
 
 				<!-- About Me -->
-				<article id="about">
-					<div class="box">
+					<article class="box" id="about">
+						
 						<div class="content-header"><h1>About Me</h1></div>
+
 						<!-- Picture of Leo Wong -->
 						<img id="bigleo" src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512"  alt="leo wong" />
-						<!-- picture of me -->
+
+						<!-- Description of Leo Wong -->
 						<div class="content">
 							<h3>Hi, I'm Leo Wong.</h3>
 							<p>I'm studying to become a full-stack developer.</p>
 							<p>I'm also looking for a job as one.</p>
 						</div>
 
+						<!-- Tags of my style -->
 						<div class="content">
 							<p><strong>my style</strong><br /><span class="flat">#simple #fun #interactive</span></p>
 						</div>
+
+						<!-- Tags of my approach -->
 						<div class="content">
 							<p><strong>my approach</strong><br /><sub><span class="flat">#mobile-first #ADDIE #DRY</span></sub></p>
 						</div>
-					</div>
+					</article>
 
 					<!-- Work -->
-					<div id="work" class="box">
+					<article id="work" class="box">
 						<div class="content-header">
 							<h1>Work</h1>
 						</div>
@@ -78,16 +85,20 @@
 						</div>
 						<!-- brief summary of my roles -->
 						<div class="content">
-							<p><strong>2021</strong> industry-program-manager</p>
-							<p><strong>2020</strong> moodle-content-creator</p>
-							<p><strong>2018</strong> head-teacher</p>
-							<p><strong>2016</strong> teacher</p>
+							<h3>Industry Program Manager</h3>
+							<p>2021</p>
+							<h3>Moodle Content Creator</h3>
+							<p>2020</p>
+							<h3>Head Teacher</h3>
+							<p>2018</p>
+							<h3>Teacher</h3>
+							<p>2016</p>
 						</div>
-					</div>
+					</article>
 
 					<!-- Portfolio 0 -->
 
-					<div id="portfolio" class="box">
+					<article id="portfolio" class="box">
 						<div class="content-header">
 							<h1>Signature Project</h1>
 						</div>
@@ -101,11 +112,11 @@
 						<!-- screenshot of signature project -->
 							<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
 						<!-- </div> -->
-					</div>
+					</article>
 
 					<!-- Portfolio 1 -->
 
-					<div id="portfolio-project-1" class="box">
+					<article id="portfolio-project-1" class="box">
 						<div class="content-header">
 							<h3>Past Project</h3>
 						</div>
@@ -132,10 +143,10 @@
 								alt="image of standardised code"  />
 							</a>
 						</div>
-					</div>
+					</article>
 
 					<!-- Portfolio 2 -->
-					<div id="portfolio-project-1" class="box">
+					<article id="portfolio-project-1" class="box">
 						<div class="content-header">
 							<h3>Past Project</h3>
 						</div>
@@ -149,24 +160,16 @@
 							class="portfolio-project-1-images" 
 							target="_blank" 
 							href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/" >
-
 								<img 
 								class="portfolio-image " 
 								src="./assets/screenshot-css-snippet-cheat-sheet.png" 
 								alt="image of a cheatsheet"  />
-
-
 							</a>
 						</div>
-					</div>
-
-
+					</article>
 
 					<!-- Portfolio 3 -->
-
-
-
-					<div id="portfolio-project-1" class="box">
+					<article id="portfolio-project-1" class="box">
 						<div class="content-header">
 							<h3>Past Project</h3>
 						</div>
@@ -190,10 +193,10 @@
 
 							</a>
 						</div>
-					</div>
+					</article>
 
 						<!-- Resume PDFs -->
-						<div id="resume" class="box">
+						<article id="resume" class="box">
 							<div class="content-header">
 								<h1>Resume</h1>
 							</div>
@@ -206,10 +209,10 @@
 								<div class="btn"><i class="fa-solid fa-arrow-alt-circle-down"></i> Resume (PDF) 
 								</div>
 							</a>
-						</div>
+						</article>
 
 						<!-- Contact Me Form -->
-						<div id="contact" class="box">
+						<article id="contact" class="box">
 							<div class="content-header">
 								<h1>Contact Me</h1>
 							</div>
@@ -223,14 +226,11 @@
 										<label for="contactMessage" id="label-contactMessage">Your Message:</label>
 										<input type="textarea" id="input-contactMessage"  />
 										<input type="submit" id="label-send" value="Send Your Message"  class="btn-wrapper" target="_blank" href="" >
-
-											
-									</input>
 									</form>
 								</div>
 							</section>
-						</div>
-					</article>
+						</article>
+					</section>
 				</section>
 			</main>
 			<!-- footer with short description of how I made this website -->

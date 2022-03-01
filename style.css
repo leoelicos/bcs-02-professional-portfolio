@@ -40,7 +40,7 @@ main {
 	z-index: 1;
 }
 
-main > header {
+body > header {
 	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
@@ -63,7 +63,7 @@ nav {
 	padding-right: 10px;
 	z-index: 9000;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
 	nav {
 		display: flex;
 		flex-flow: column-reverse nowrap;
@@ -109,7 +109,6 @@ nav ul li:hover {
 	position: sticky;
 	top: 0px;
 	background-color: rgba(255, 255, 255, 0);
-	/* border: 1px solid black; */
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -138,7 +137,7 @@ nav ul li:hover {
 }
 
 /* flex the about-me so the sections align in column */
-#about {
+#scrolling-text {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -177,6 +176,9 @@ nav ul li:hover {
 	margin: 0.3rem 0;
 	width: 100%;
 }
+.content h3 {
+	margin-top: 0.5rem;
+}
 
 .box {
 	width: calc(100vw * 0.8);
@@ -200,8 +202,19 @@ nav ul li:hover {
 }
 a#linkedin-button,
 a#github-button {
-	background-color: #fff2cc;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0.6rem;
+	display: inline-block;
+	transition: transform 0.5s ease-in-out;
 }
+
+a#linkedin-button:hover,
+a#github-button:hover {
+	box-shadow: inset 0px 0px 2px rgb(255 255 255), 0 0 10px rgb(255 255 255);
+	transform: scale(1.1);
+	transition: transform 0.5s ease-in-out;
+}
+
 #linkedin-button img,
 #github-button img {
 	width: 50px;
