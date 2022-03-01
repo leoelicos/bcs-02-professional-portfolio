@@ -4,7 +4,7 @@
 
 ## Description
 
-This project was a challenge of design as well as functionality and coding. I wrote this app to illustrate the importance of flexbox as well as to provide a an opportunity to add interesting portfolios in the future. I included screenshots of my design process at the bottom of this REDME.
+This project was a challenge of design as well as functionality and coding. I wrote this app to illustrate the importance of flexbox as well as to provide a an opportunity to add interesting portfolios in the future. I included screenshots of my design process at the bottom of this README.
 
 I designed the images individually in PowerPoint and eventually built an animation in PowerPoint and made a mockup gif. I then explored ways in which I could code the gif, and realised the limitations of CSS of on-scroll events.
 
