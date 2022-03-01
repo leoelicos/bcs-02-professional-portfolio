@@ -42,15 +42,15 @@
 				<header id="roadside-shrubs" class="header" ><img src="./assets/4-car-2.png" alt="roadside-shrubs" /></header>
 				<header id="infrastructure" class="header" ><img src="./assets/5-human-2.png" alt="infrastructure" /></header>
 
-				<!-- Portfolio fly-in section -->
+				<!-- fly-in articles -->
 
-				<!-- about Me -->
-				<div id="about">
+				<!-- About Me -->
+				<article id="about">
 					<div class="box">
 						<div class="content-header"><h1>About Me</h1></div>
-
-						<!-- picture of me -->
+						<!-- Picture of Leo Wong -->
 						<img id="bigleo" src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512"  alt="leo wong" />
+						<!-- picture of me -->
 						<div class="content">
 							<h3>Hi, I'm Leo Wong.</h3>
 							<p>I'm studying to become a full-stack developer.</p>
@@ -99,7 +99,7 @@
 						</div>
 
 						<!-- screenshot of signature project -->
-							<a id="portfolio-signature" class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
+							<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/"><img class="portfolio-image" src="./assets/landing-page.jpg" alt="image of a landing page" /></a>
 						<!-- </div> -->
 					</div>
 
@@ -112,7 +112,7 @@
 						<div class="wrapper">
 							<div class="content">
 								<h3>Code Review</h3>
-								<p>Reworked codebase to meet professional standards.</p>
+								<p>Codebase reworked to professional standards.</p>
 								<p><sub><span class="flat">#semanticHTML&ensp;#dryCSS&ensp;#accessibility</span></sub></p>
 							</div>
 							<a 
@@ -142,7 +142,7 @@
 						<div class="wrapper">
 							<div class="content">
 								<h3>Developer Tool</h3>
-								<p>Clickable cheatsheet for beginner programmers to copy and paste</p>
+								<p>Clickable cheatsheet for beginner programmers</p>
 								<p><sub><span class="flat">#CSSflexbox&ensp;#CSSgrid&ensp;#responsive</span></sub></p>
 							</div>
 							<a 
@@ -192,18 +192,20 @@
 						</div>
 					</div>
 
-
 						<!-- Resume PDFs -->
 						<div id="resume" class="box">
 							<div class="content-header">
 								<h1>Resume</h1>
 							</div>
-							<div class="content">
-								<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1YWzpBWkyxsXHbFR2Dpfgwi09n13q6GuV/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> e-Learning Portfolio (PDF) </a>
-							</div>
-							<div class="content">
-								<a class="portfolio" target="_blank" href="https://drive.google.com/file/d/1goW2ynvrUE91fD9qO_jX_cYNFC0ZUwNk/view?usp=sharing">	<i class="fa-solid fa-arrow-alt-circle-down"></i> Resume (PDF) </a>
-							</div>
+							
+							<a class="btn-wrapper" target="_blank" href="https://drive.google.com/file/d/1YWzpBWkyxsXHbFR2Dpfgwi09n13q6GuV/view?usp=sharing" draggable="false"> <!-- prevent dragging -->
+								<div class="btn"><i class="fa-solid fa-arrow-alt-circle-down"></i> e-Learning Portfolio (PDF) 
+								</div>
+							</a>
+							<a class="btn-wrapper" target="_blank" href="https://drive.google.com/file/d/1goW2ynvrUE91fD9qO_jX_cYNFC0ZUwNk/view?usp=sharing" draggable="false">
+								<div class="btn"><i class="fa-solid fa-arrow-alt-circle-down"></i> Resume (PDF) 
+								</div>
+							</a>
 						</div>
 
 						<!-- Contact Me Form -->
@@ -213,18 +215,24 @@
 							</div>
 							<section class="bg-modal">
 								<div class="modal-content">
-									<img id="small-leo" src="https://ca.slack-edge.com/T02SMV76XDH-U032NFLSC83-99b2d990e684-512" alt="picture of Leo Wong"  />
-									<form action="">
-										<input type="text" placeholder="Name" />
-										<input type="text" placeholder="Email" />
-										<input type="textarea" placeholder="Message" />
-										<div class="btn">Submit</div>
+									<form id="contact-form"  onsubmit="return false;">
+										<label for="contactName" id="label-contactName" >Your Name:</label>
+										<input type="text"  id="input-contactName" required>
+										<label for="contactEmail" id="label-contactEmail">Your Email:</label>
+										<input type="text"  id="input-contactEmail" required/>
+										<label for="contactMessage" id="label-contactMessage">Your Message:</label>
+										<input type="textarea" id="input-contactMessage"  />
+										<input type="submit" id="label-send" value="Send Your Message"  class="btn-wrapper" target="_blank" href="" >
+
+											
+									</input>
 									</form>
 								</div>
 							</section>
 						</div>
-					</section>
-				</main>
+					</article>
+				</section>
+			</main>
 			<!-- footer with short description of how I made this website -->
 			<footer class="header">
 				<p>20 hours HTML/CSS&ensp;|&ensp;All images drawn by me&ensp;|&ensp;<a href="#top"><i class="icon fa fa-arrow-up fa-fw "></i>
