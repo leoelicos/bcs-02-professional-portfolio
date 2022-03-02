@@ -211,7 +211,7 @@ figure img {
 .box {
 	width: calc(100vw * 0.8);
 	max-width: 800px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	border-radius: 8px;
 	text-align: center;
 	vertical-align: middle;
@@ -416,7 +416,7 @@ input {
 	border-radius: 5px 5px 0 0;
 
 	text-align: left;
-	font-family: 'Poppins';
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	color: black;
 }
 
