@@ -75,7 +75,7 @@ nav {
 	justify-content: space-between;
 	max-width: calc(100vh * 1499 / 842); /* limit navbar by the car's original dimensions so it sits inside the frame vertically aligned to the car */
 	padding-right: 10px;
-	z-index: 7;
+	z-index: 1;
 }
 
 /* container for logo */
@@ -163,22 +163,22 @@ figure img {
 
 /* add depth to images so they layer from vertical scroll and also their intrinsic transparency and their calculated image depths */
 #bg-motorway {
-	z-index: 0;
+	/* z-index: 0; */
 }
 #bg-mountains {
-	z-index: 1;
+	/* z-index: 1; */
 }
 #bg-life {
-	z-index: 2;
+	/* z-index: 2; */
 }
 #bg-road {
-	z-index: 3;
+	/* z-index: 3; */
 }
 #bg-car {
-	z-index: 4;
+	/* z-index: 4; */
 }
 #bg-human {
-	z-index: 5;
+	/* z-index: 5; */
 }
 
 /*******************************
@@ -192,7 +192,7 @@ figure img {
 	align-items: center;
 	justify-content: space-evenly;
 	position: relative;
-	z-index: 6;
+	/* z-index: 6; */
 }
 
 /*******************
