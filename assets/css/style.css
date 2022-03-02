@@ -191,6 +191,8 @@ figure img {
 	flex-flow: column;
 	align-items: center;
 	justify-content: space-evenly;
+	position: relative;
+	z-index: 6;
 }
 
 /*******************
@@ -198,7 +200,6 @@ figure img {
 	*******************/
 
 .box {
-	z-index: 6;
 	width: calc(100vw * 0.8);
 	max-width: 800px;
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
