@@ -312,7 +312,7 @@ figure img {
 .hashtags {
 	white-space: nowrap;
 	color: var(--hashtags-color);
-	font-size: 75%;
+	font-size: 12px;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
