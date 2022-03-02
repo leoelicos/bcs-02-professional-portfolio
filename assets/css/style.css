@@ -11,16 +11,6 @@
 :root {
 	/* Background Colors */
 	--color-bg-body: #fff2cc;
-
-	/* Element Depths */
-	--depth-bg-motorway: 0;
-	--depth-bg-mountains: 1;
-	--depth-bg-life: 2;
-	--depth-bg-road: 3;
-	--depth-bg-car: 4;
-	--depth-bg-human: 5;
-	--depth-scrolling-text: 6;
-	--depth-navbar: 7;
 }
 
 /********************
@@ -85,7 +75,7 @@ nav {
 	justify-content: space-between;
 	max-width: calc(100vh * 1499 / 842); /* limit navbar by the car's original dimensions so it sits inside the frame vertically aligned to the car */
 	padding-right: 10px;
-	z-index: var(--depth-navbar);
+	z-index: 7;
 }
 
 /* container for logo */
@@ -173,22 +163,22 @@ figure img {
 
 /* add depth to images so they layer from vertical scroll and also their intrinsic transparency and their calculated image depths */
 #bg-motorway {
-	z-index: var(--depth-bg-motorway);
+	z-index: 0;
 }
 #bg-mountains {
-	z-index: var(--depth-bg-mountains);
+	z-index: 1;
 }
 #bg-life {
-	z-index: var(--depth-bg-life);
+	z-index: 2;
 }
 #bg-road {
-	z-index: var(--depth-bg-road);
+	z-index: 3;
 }
 #bg-car {
-	z-index: var(--depth-bg-car);
+	z-index: 4;
 }
 #bg-human {
-	z-index: var(--depth-bg-human);
+	z-index: 5;
 }
 
 /*******************************
@@ -201,7 +191,6 @@ figure img {
 	flex-flow: column;
 	align-items: center;
 	justify-content: space-evenly;
-	z-index: var(--depth-scrolling-text);
 }
 
 /*******************
@@ -209,6 +198,7 @@ figure img {
 	*******************/
 
 .box {
+	z-index: 6;
 	width: calc(100vw * 0.8);
 	max-width: 800px;
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
