@@ -10,11 +10,9 @@
 
 :root {
 	/* Background Colors */
-
 	--color-bg-body: #fff2cc;
 
 	/* Element Depths */
-
 	--depth-bg-motorway: 0;
 	--depth-bg-mountains: 1;
 	--depth-bg-life: 2;
@@ -203,6 +201,7 @@ figure img {
 	flex-flow: column;
 	align-items: center;
 	justify-content: space-evenly;
+	z-index: var(--depth-scrolling-text);
 }
 
 /*******************
@@ -219,7 +218,6 @@ figure img {
 	color: #fff;
 	height: 100vh;
 	margin: 1rem 10% 1rem 10%;
-	z-index: var(--depth-scrolling-text);
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;

@@ -48,7 +48,7 @@ Some of my design process in its early stages:
 
 ## Credits
 
-Chrome Developer Tools
+-  CSS Normalize https://necolas.github.io/normalize.css/
 
 ## License
 
