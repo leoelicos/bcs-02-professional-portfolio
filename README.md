@@ -10,9 +10,11 @@ I designed the images individually in PowerPoint and eventually built an animati
 
 I hope that in 3 months time (May 2022) I will be able to use Javascript and DOM Manipulation to make it even more interactive.
 
+The app currently does not work fully in iPhone 11 Pro Max Safari and Chrome — see [Known Bugs](##Known Bugs)
+
 ## Usage
 
-To access the app, click on [Portfolio](https://leoelicos.github.io/bcs-02-portfolio/).
+To access the app, please open [Portfolio](https://leoelicos.github.io/bcs-02-portfolio/) in Chrome on a PC or Mac.
 
 To move down the page, scroll down with your scroll button, or swipe up on your phone.
 
@@ -45,6 +47,18 @@ Some of my design process in its early stages:
 ### Second Mockup
 
 ![Second Mockup](./assets/mockups/mockup2.gif)
+
+## Known Bugs
+
+My friend tested this app on her iPhone 11 Pro Max in Safari and Chrome and the text flowed behind the mountains. This is a known bug but to fix it is beyond the limit of my current knowledge.
+
+### Bug: iOS Safari
+
+Bug: text appears behind mountains ![iOS Safari](./assets/bugs/iphone-11-pro-max-safari-2022-03-02.mp4)
+
+### Bug: iOS Chrome
+
+Bug: text appears behind mountains, but when you scroll down the text flips back up ![iOS Safari](./assets/bugs/iphone-11-pro-max-chrome-2022-03-02.mp4)
 
 ## Credits
 
