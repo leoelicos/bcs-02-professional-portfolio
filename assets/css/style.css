@@ -435,7 +435,7 @@ form {
 	/* grid 2x3 to align labels and forms */
 	display: grid;
 	grid-template-columns: min-content 1fr;
-	grid-auto-rows: 1fr;
+	grid-auto-rows: min-content;
 	gap: 1rem 0.5rem;
 	align-items: center;
 	justify-content: center;
@@ -464,6 +464,10 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+	form {
+		padding: 0.3rem;
+		gap: 0.3rem;
+	}
 	label {
 		grid-column: span 2;
 		text-align: center;
@@ -474,6 +478,10 @@ input {
 		grid-column: span 2;
 		text-align: center;
 		justify-content: center;
+	}
+	.btn-wrapper {
+		padding: 0.3rem;
+		margin: 0.1rem 0;
 	}
 }
 
@@ -516,6 +524,9 @@ footer {
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	z-index: 9;
 }
 .footer-content {
 	display: inline;
