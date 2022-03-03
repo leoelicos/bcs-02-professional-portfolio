@@ -229,6 +229,7 @@ figure img {
 	*******************/
 
 .box {
+	z-index: 8;
 	width: calc(100vw * 0.8);
 	max-width: 800px;
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
