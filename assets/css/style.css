@@ -107,6 +107,7 @@ nav {
 	padding-right: 10px;
 
 	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 	z-index: 7;
 }
 
@@ -194,26 +195,32 @@ figure img {
 
 /* add depth to images so they layer from vertical scroll and also their intrinsic transparency and their calculated image depths */
 #bg-motorway {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 0;
 }
 #bg-mountains {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 1;
 }
 #bg-life {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 2;
 }
 #bg-road {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 3;
 }
 #bg-car {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 4;
 }
 #bg-human {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 5;
 }
@@ -224,6 +231,7 @@ figure img {
 
 /* flex parent so articles align in a column */
 #scrolling-text {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 6;
 	display: flex;
@@ -238,6 +246,7 @@ figure img {
 	*******************/
 
 .box {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	z-index: 8;
 
