@@ -63,13 +63,11 @@ The app currently does not work fully in iOS Safari and iOS Chrome — see [Bugs
 
 Tested this app on iPhone 11 Pro Max in Safari and Chrome and also iPhone 13 in Safari and the text flowed behind the mountains.
 
-### Bug: iOS Safari
+### Bug: iOS Safari and Chrome (fixed)
 
-Bug: text appears behind mountains ![iOS Safari](./assets/bugs/iphone-11-pro-max-safari-2022-03-02.gif)
+Text was appearing behind the mountains as Safari was not interpreting z-index.
 
-### Bug: iOS Chrome
-
-Bug: text appears behind mountains, but when you scroll down the text flips back up ![iOS Safari](./assets/bugs/iphone-11-pro-max-chrome-2022-03-02.gif)
+I fixed this by adding `-webkit-transform: translate3d(0, 0, 0);` before `z-index`, triggering hardware acceleration in Safari to read positive z-index values. This allowed the text to properly layer over the background images.
 
 ## Credits
 
