@@ -434,7 +434,8 @@ form {
 
 	/* grid 2x3 to align labels and forms */
 	display: grid;
-	grid-template: repeat(4, 1fr) / min-content 1fr;
+	grid-template-columns: min-content 1fr;
+	grid-auto-rows: 1fr;
 	gap: 1rem 0.5rem;
 	align-items: center;
 	justify-content: center;
@@ -467,6 +468,7 @@ input {
 		grid-column: span 2;
 		text-align: center;
 		justify-content: center;
+		padding-left: 0;
 	}
 	input {
 		grid-column: span 2;
