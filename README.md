@@ -8,7 +8,9 @@ This project was a challenge of design as well as functionality and coding. I wr
 
 I designed the images individually in PowerPoint and eventually built an animation in PowerPoint and made a mockup gif. I then explored ways in which I could code the gif, and realised the limitations of CSS of on-scroll events. I hope that in 3 months time (May 2022) I will be able to use Javascript and DOM Manipulation to make it even more interactive.
 
-The app currently does not work fully in iOS Safari and iOS Chrome — see [Bugs](#bugs)
+### Timeframe
+
+I spent about 80 hours on this project from creating the images to designing the code and testing for compatibility issues with iOS.
 
 ## Table of Contents
 
@@ -57,7 +59,9 @@ Some of my design process in its early stages:
 
 ## Bugs
 
-My friend tested this app on her iPhone 11 Pro Max in Safari and Chrome and the text flowed behind the mountains. This is a known bug but to fix it is beyond the limit of my current knowledge.
+The app currently does not work fully in iOS Safari and iOS Chrome — see [Bugs](#bugs)
+
+Tested this app on iPhone 11 Pro Max in Safari and Chrome and also iPhone 13 in Safari and the text flowed behind the mountains.
 
 ### Bug: iOS Safari
 
