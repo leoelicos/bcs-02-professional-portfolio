@@ -23,7 +23,7 @@ I spent about 80 hours on this project from creating the images to designing the
 
 ## Usage
 
-To access the app, please open [Portfolio](https://leoelicos.github.io/bcs-02-portfolio/) in Chrome on a PC or Mac.
+To access the app, please open [Portfolio](https://leoelicos.github.io/bcs-02-professional-portfolio/) in Chrome on a PC or Mac.
 
 To move down the page, scroll down with your scroll button, or swipe up on your phone.
 
