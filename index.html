@@ -34,11 +34,13 @@
 		<main>
 			<!-- Section for Splash Image -->
 			<section id="top">
-				<figure id="bg-motorway"><img src="./assets/images/0-motorway.png" alt="a sign indicating to scroll down" /></figure>
+				<a href="#about">
+					<figure id="bg-motorway"><img src="./assets/images/0-motorway.png" alt="a sign indicating to scroll down" /></figure
+				></a>
 			</section>
 
 			<!-- Section for Scrolling Pictures -->
-			<section>
+			<section id="bottom">
 				<figure id="bg-mountains"><img src="./assets/images/1-mountains.png" alt="a landscape of mountains" /></figure>
 				<figure id="bg-life"><img src="./assets/images//2-life.png" alt="electrical towers, roadside trees, roadside shrubs" /></figure>
 				<figure id="bg-road"><img src="./assets/images//3-road.png" alt="an asphalt road with fences on both sides" /></figure>
@@ -201,7 +203,7 @@
 					<article id="contact" class="box">
 						<!-- Section Heading -->
 						<h1 class="content-header">Contact Me</h1>
-						<form id="contact-form" onsubmit="return false;">
+						<form id="contact-form">
 							<label for="contactName" id="label-contactName">Your Name:</label>
 							<input type="text" id="input-contactName" required />
 							<label for="contactEmail" id="label-contactEmail">Your Email:</label>
