@@ -408,6 +408,29 @@ figure img {
 	position: relative;
 }
 
+/* the links to code and app */
+.repo,
+.deployed {
+	border-radius: 0.6rem;
+	padding: 0 1rem;
+	line-height: 2;
+	cursor: pointer;
+	color: white;
+}
+.repo:hover,
+.deployed:hover {
+	box-shadow: inset 0 0 2px var(--anchor-boxshadow), 0 0 10px var(--anchor-boxshadow);
+	transform: scale(1.02);
+	transition: transform 0.3s linear;
+	outline: none;
+}
+.repo {
+	background-color: rgb(65, 161, 137);
+}
+.deployed {
+	background-color: rgb(255, 255, 41);
+}
+
 /* button links to social network and public repo */
 .btn-wrapper {
 	background-color: var(--btnwrapper-bg-color);
