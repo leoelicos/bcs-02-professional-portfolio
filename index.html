@@ -12,213 +12,204 @@
 
 	<body>
 		<header>
-			<nav>
-				<p>
-					<a href="#contact"><img src="./assets/images/icon/favicon.svg" alt="LW Design | Leo Wong" /></a>
-				</p>
-				<ul>
-					<li><a href="#about">#about</a></li>
-					<li><a href="#work">#work</a></li>
-					<li><a href="#portfolio">#portfolio</a></li>
-					<li><a href="#resume">#resume</a></li>
-					<li><a href="#contact">#contact</a></li>
-				</ul>
-			</nav>
+			<nav><a href="#about">about</a><a href="#work">work</a><a href="#portfolio">portfolio</a><a href="#contact">contact</a></nav>
 		</header>
 
+		<!-- <figure id="bg-mountains"><img src="./assets/images/bg/mountain.png" alt="background picture of mountains" /></figure> -->
 		<main>
-			<section id="top">
+			<figure id="bg-motorway">
 				<a href="#about">
-					<figure id="bg-motorway"><img src="./assets/images/bg/motorway.png" alt="background picture of a motorway sign pointing down" /></figure
-				></a>
-			</section>
+					<img src="./assets/images/bg/motorway.png" alt="background picture of a motorway sign pointing down" />
+				</a>
+			</figure>
+			<figure id="bg-life"><img src="./assets/images/bg/road.png" alt="background picture of trees and a road" /></figure>
+			<figure id="bg-car"><img src="./assets/images/bg/car.png" alt="background picture of car interior" /></figure>
 
-			<section id="bottom">
-				<figure id="bg-mountains"><img src="./assets/images/bg/mountain.png" alt="background picture of mountains" /></figure>
-				<figure id="bg-life"><img src="./assets/images/bg/tree.png" alt="background picture of trees" /></figure>
-				<figure id="bg-road"><img src="./assets/images/bg/road.png" alt="background picture of a road" /></figure>
-				<figure id="bg-car"><img src="./assets/images/bg/car.png" alt="background picture of car interior" /></figure>
-				<figure id="bg-human"><img src="./assets/images/bg/hand.png" alt="background picture of hand on steering wheel" /></figure>
+			<section class="scrolling">
+				<section class="about-me">
+					<article class="box" id="about">
+						<h1 class="content-header">Leo Wong</h1>
 
-				<section class="scrolling">
-					<section class="about-me">
-						<article class="box" id="about">
-							<h1 class="content-header">Leo Wong</h1>
+						<img class="avatar" src="./assets/images/avatar.jpg" alt="leo wong" />
 
-							<img id="photo" src="./assets/images/avatar.jpg" alt="leo wong" />
+						<section class="content">
+							<h3>Full Stack Developer</h3>
+						</section>
 
+						<section class="content">
+							<h3>My process</h3>
+							<h3><span class="hashtag">#TDD</span><span class="hashtag">#DRY</span><span class="hashtag">#agile</span></h3>
+						</section>
+						<section class="content">
+							<h3>My values</h3>
+							<h3><span class="hashtag">#original</span><span class="hashtag">#teamwork</span><span class="hashtag">#bestpractice</span></h3>
+						</section>
+
+						<div class="content icons">
+							<a class="btn icon" target="_blank" href="https://drive.google.com/file/d/1h8cJZCP00_rwluAvS5hHzIPyXsKbvkZm/view?usp=sharing">
+								<p class="image download"><i class="fa-solid fa-arrow-alt-circle-down"></i></p>
+								<p class="label">Resume</p>
+							</a>
+							<a class="btn icon" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/">
+								<p class="image"><img src="./assets/images/icon/li.png" alt="an icon of LinkedIn" /></p>
+								<p class="label">LinkedIn</p>
+							</a>
+							<a class="btn icon" target="_blank" href="https://github.com/leoelicos?tab=repositories">
+								<p class="image"><img src="./assets/images/icon/gh.png" alt="an icon of GitHub" /></p>
+								<p class="label">GitHub</p>
+							</a>
+						</div>
+					</article>
+				</section>
+				<section class="articles">
+					<article class="box" id="work">
+						<h1 class="content-header">Bio</h1>
+						<section class="content">
+							<h3>Full Stack Student</h3>
+							<p class="hashtags"><span class="hashtag">2022</span></p>
+							<h3>Industry Program Manager</h3>
+							<p class="hashtags"><span class="hashtag">2021</span></p>
+							<h3>Moodle Content Creator</h3>
+							<p class="hashtags"><span class="hashtag">2020</span></p>
+							<h3>Head Teacher</h3>
+							<p class="hashtags"><span class="hashtag">2018</span></p>
+							<h3>Teacher</h3>
+							<p class="hashtags"><span class="hashtag">2016</span></p>
+						</section>
+					</article>
+
+					<article class="box" id="portfolio">
+						<h1 class="content-header">Front end</h1>
+						<section class="content-wrapper">
 							<section class="content">
-								<h3><span class="hashtag">Full Stack Developer</span></h3>
+								<h2>MOOVEE</h2>
+								<h3>YouTube Trailer Search</h3>
+								<p class="hashtags"><span class="hashtag">#collab</span><span class="hashtag">#ajax</span><span class="hashtag">#youtube</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-07-moovee" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos.github.io/bcs-07-moovee/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-07-moovee/"><img class="content-image" src="./assets/images/project/moovee.png" alt="image of moovee app" /></a>
 							</section>
+						</section>
+					</article>
 
+					<article class="box" id="portfolio">
+						<h1 class="content-header">Full stack</h1>
+						<section class="content-wrapper">
 							<section class="content">
-								<h3>my coding style</h3>
-								<h3><span class="hashtag">#TDD</span><span class="hashtag">#DRY</span><span class="hashtag">#agile</span></h3>
+								<h2>Just Kidding!</h2>
+								<h3>Image Sharing Forum</h3>
+								<p class="hashtags"><span class="hashtag">#collab</span><span class="hashtag">#agile</span><span class="hashtag">#mvc</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-14-tech-blog" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos-tech-blog.herokuapp.com/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://just-kidding-baby.herokuapp.com/">
+									<img class="content-image" src="./assets/images/project/jk.jpg" alt="image of just kidding" />
+								</a>
 							</section>
+						</section>
+					</article>
+
+					<article class="box" id="portfolio">
+						<h1 class="content-header">Full stack</h1>
+						<section class="content-wrapper">
 							<section class="content">
-								<h3>my approach</h3>
-								<h3><span class="hashtag">#organic</span><span class="hashtag">#teamwork</span><span class="hashtag">#best-practice</span></h3>
+								<h2>Submitted!</h2>
+								<h3>Wordpress-style Tech Blog</h3>
+								<p class="hashtags"><span class="hashtag">#RESTful</span><span class="hashtag">#expressjs</span><span class="hashtag">#mvc</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-14-tech-blog" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos-tech-blog.herokuapp.com/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://leoelicos-tech-blog.herokuapp.com/">
+									<img class="content-image" src="./assets/images/project/submitted.jpg" alt="image of tech blog" />
+								</a>
 							</section>
+						</section>
+					</article>
 
-							<a class="btn-wrapper" target="_blank" href="https://drive.google.com/file/d/1h8cJZCP00_rwluAvS5hHzIPyXsKbvkZm/view?usp=sharing" draggable="false">
-								<div class="btn"><i class="fa-solid fa-arrow-alt-circle-down"></i> Resume (PDF)</div></a
-							>
-							<div class="content">
-								<a id="linkedin-button" class="btn" target="_blank" href="https://www.linkedin.com/in/leo-wong-b9b570129/"><img src="./assets/images/icon/li.png" alt="an icon of LinkedIn" /></a>
-								<a id="github-button" class="btn" target="_blank" href="https://github.com/leoelicos?tab=repositories"><img src="./assets/images/icon/gh.png" alt="an icon of GitHub" /></a>
-							</div>
-						</article>
-					</section>
-					<section class="articles">
-						<article class="box" id="work">
-							<h1 class="content-header">Bio</h1>
+					<article class="box" id="portfolio">
+						<h1 class="content-header">Back end</h1>
+						<section class="content-wrapper">
 							<section class="content">
-								<h3>Full Stack Coding Bootcamp Student</h3>
-								<p class="hashtags"><span class="hashtag">2022</span></p>
-								<h3>Industry Program Manager</h3>
-								<p class="hashtags"><span class="hashtag">2021</span></p>
-								<h3>Moodle Content Creator</h3>
-								<p class="hashtags"><span class="hashtag">2020</span></p>
-								<h3>Head Teacher</h3>
-								<p class="hashtags"><span class="hashtag">2018</span></p>
-								<h3>Teacher</h3>
-								<p class="hashtags"><span class="hashtag">2016</span></p>
+								<h2>Employee Management System</h2>
+								<h3>Command Line CMS</h3>
+								<p class="hashtags"><span class="hashtag">#nodejs</span><span class="hashtag">#CRUD</span><span class="hashtag">#mysql</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-12-employee-management-system/" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://www.youtube.com/watch?v=W58SFkcsXkM" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> demo</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://www.youtube.com/watch?v=W58SFkcsXkM">
+									<img class="content-image" src="./assets/images/project/ems.jpg" alt="image of employee management system" />
+								</a>
 							</section>
-						</article>
+						</section>
+					</article>
 
-						<article class="box" id="portfolio">
-							<h1 class="content-header">Front end</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>MOOVEE</h2>
-									<h3>YouTube Trailer Search</h3>
-									<p class="hashtags"><span class="hashtag">#collab</span><span class="hashtag">#ajax</span><span class="hashtag">#youtube</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-07-moovee" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos.github.io/bcs-07-moovee/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a id="portfolio-signature" target="_blank" href="https://leoelicos.github.io/bcs-07-moovee/"><img class="content-image" src="./assets/images/project/moovee.png" alt="image of moovee app" /></a>
-								</section>
+					<article class="box">
+						<h1 class="content-header">Front end</h1>
+						<section class="content-wrapper">
+							<section class="content">
+								<h2>WWAG</h2>
+								<h3>Weather Data Visualization</h3>
+								<p class="hashtags"><span class="hashtag">#ajax</span><span class="hashtag">#svg</span><span class="hashtag">#no-scroll</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-06-weather-dashboard" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
+									<a href="https://leoelicos.github.io/bcs-06-weather-dashboard/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-06-weather-dashboard/">
+									<img class="content-image" src="./assets/images/project/wwag.jpg" alt="image of worldwide weather app" />
+								</a>
 							</section>
-						</article>
+						</section>
+					</article>
 
-						<article class="box" id="portfolio">
-							<h1 class="content-header">Full stack</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>Just Kidding!</h2>
-									<h3>Image Sharing Forum</h3>
-									<p class="hashtags"><span class="hashtag">#collab</span><span class="hashtag">#agile</span><span class="hashtag">#mvc</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-14-tech-blog" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos-tech-blog.herokuapp.com/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://just-kidding-baby.herokuapp.com/">
-										<img class="content-image" src="./assets/images/project/jk.jpg" alt="image of just kidding" />
-									</a>
-								</section>
+					<article class="box">
+						<h1 class="content-header">Front end</h1>
+						<section class="content-wrapper">
+							<section class="content">
+								<h2>SYTYCJ</h2>
+								<h3>Timed Javascript Quiz</h3>
+								<p class="hashtags"><span class="hashtag">#game</span><span class="hashtag">#interactive</span><span class="hashtag">#no-scroll</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-04-code-quiz" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
+									<a href="https://leoelicos.github.io/bcs-04-code-quiz/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-04-code-quiz/">
+									<img class="content-image" src="./assets/images/project/sytycj.jpg" alt="image of code quiz" />
+								</a>
 							</section>
-						</article>
+						</section>
+					</article>
 
-						<article class="box" id="portfolio">
-							<h1 class="content-header">Full stack</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>Submitted!</h2>
-									<h3>Wordpress-style Tech Blog</h3>
-									<p class="hashtags"><span class="hashtag">#RESTful</span><span class="hashtag">#expressjs</span><span class="hashtag">#mvc</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-14-tech-blog" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://leoelicos-tech-blog.herokuapp.com/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://leoelicos-tech-blog.herokuapp.com/">
-										<img class="content-image" src="./assets/images/project/submitted.jpg" alt="image of tech blog" />
-									</a>
-								</section>
+					<article class="box">
+						<h1 class="content-header">Front end</h1>
+						<section class="content-wrapper">
+							<section class="content">
+								<h2>KIDDLE</h2>
+								<h3>Wordle for kids</h3>
+								<p class="hashtags"><span class="hashtag">#game</span><span class="hashtag">#kids</span><span class="hashtag">#fun</span></p>
+								<div class="code-links">
+									<a href="https://github.com/leoelicos/bcs-04-word-guess" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
+									<a href="https://leoelicos.github.io/bcs-04-word-guess/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
+								</div>
+								<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-04-word-guess/">
+									<img class="content-image" src="./assets/images/project/kiddle.jpg" alt="image of a Kiddle game" />
+								</a>
 							</section>
-						</article>
+						</section>
+					</article>
 
-						<article class="box" id="portfolio">
-							<h1 class="content-header">Back end</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>Employee Management System</h2>
-									<h3>Command Line CMS</h3>
-									<p class="hashtags"><span class="hashtag">#nodejs</span><span class="hashtag">#CRUD</span><span class="hashtag">#mysql</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-12-employee-management-system/" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a> <a href="https://www.youtube.com/watch?v=W58SFkcsXkM" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> demo</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://www.youtube.com/watch?v=W58SFkcsXkM">
-										<img class="content-image" src="./assets/images/project/ems.jpg" alt="image of employee management system" />
-									</a>
-								</section>
-							</section>
-						</article>
-
-						<article class="box">
-							<h1 class="content-header">Front end</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>WWAG</h2>
-									<h3>Weather Data Visualization</h3>
-									<p class="hashtags"><span class="hashtag">#ajax</span><span class="hashtag">#svg</span><span class="hashtag">#no-scroll</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-06-weather-dashboard" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
-										<a href="https://leoelicos.github.io/bcs-06-weather-dashboard/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-06-weather-dashboard/">
-										<img class="content-image" src="./assets/images/project/wwag.jpg" alt="image of worldwide weather app" />
-									</a>
-								</section>
-							</section>
-						</article>
-
-						<article class="box">
-							<h1 class="content-header">Front end</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>SYTYCJ</h2>
-									<h3>Timed Javascript Quiz</h3>
-									<p class="hashtags"><span class="hashtag">#game</span><span class="hashtag">#interactive</span><span class="hashtag">#no-scroll</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-04-code-quiz" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
-										<a href="https://leoelicos.github.io/bcs-04-code-quiz/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-04-code-quiz/">
-										<img class="content-image" src="./assets/images/project/sytycj.jpg" alt="image of code quiz" />
-									</a>
-								</section>
-							</section>
-						</article>
-
-						<article class="box">
-							<h1 class="content-header">Front end</h1>
-							<section class="content-wrapper">
-								<section class="content">
-									<h2>KIDDLE</h2>
-									<h3>Wordle for kids</h3>
-									<p class="hashtags"><span class="hashtag">#game</span><span class="hashtag">#kids</span><span class="hashtag">#fun</span></p>
-									<div class="code-links">
-										<a href="https://github.com/leoelicos/bcs-04-word-guess" target="_blank" class="repo"><i class="fa-solid fa-code"></i> code</a>
-										<a href="https://leoelicos.github.io/bcs-04-word-guess/" target="_blank" class="deployed"><i class="fa-solid fa-arrow-up-right-from-square"></i> app</a>
-									</div>
-									<a class="anchor-past-project" target="_blank" href="https://leoelicos.github.io/bcs-04-word-guess/">
-										<img class="content-image" src="./assets/images/project/kiddle.jpg" alt="image of a Kiddle game" />
-									</a>
-								</section>
-							</section>
-						</article>
-
-						<article id="contact" class="box">
-							<h1 class="content-header">Contact Me</h1>
-							<form id="contact-form">
-								<label for="contactName" id="label-contactName">Your Name:</label>
-								<input type="text" id="input-contactName" required />
-								<label for="contactEmail" id="label-contactEmail">Your Email:</label>
-								<input type="text" id="input-contactEmail" required />
-								<label for="contactMessage" id="label-contactMessage">Your Message:</label>
-								<input type="textarea" id="input-contactMessage" />
-								<input type="submit" id="label-send" value="Send Your Message" class="btn-wrapper" target="_blank" href="" />
-							</form>
-						</article>
-					</section>
+					<article id="contact" class="box">
+						<h1 class="content-header">Contact Me</h1>
+						<form id="contact-form">
+							<label for="contactName" id="label-contactName">Your Name:</label>
+							<input type="text" id="input-contactName" required />
+							<label for="contactEmail" id="label-contactEmail">Your Email:</label>
+							<input type="text" id="input-contactEmail" required />
+							<label for="contactMessage" id="label-contactMessage">Your Message:</label>
+							<input type="textarea" id="input-contactMessage" />
+							<input type="submit" id="label-send" value="Send Your Message" class="btn-wrapper" target="_blank" href="" />
+						</form>
+					</article>
 				</section>
 			</section>
 		</main>
